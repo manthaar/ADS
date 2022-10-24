@@ -12,11 +12,8 @@ function merge(a, b) {
   let i=0, j=0;
   
   while(i < a.length && j < b.length) {
-    if(a[i] <= b[j]) {
-      res.push(a[i++]);
-    }else {
-      res.push(b[j++]);
-    }
+    if(a[i] <= b[j]) res.push(a[i++]);
+    else res.push(b[j++]);
   }
   
   while(i < a.length) {
