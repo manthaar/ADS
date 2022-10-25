@@ -15,6 +15,8 @@ function atb(arr) {
     
     root.left = helper(a, s, mid-1);
     root.right = helper(a, mid+1, e);
+    
+    return root;
   }
   
   return helper(arr, 0, arr.length-1);
